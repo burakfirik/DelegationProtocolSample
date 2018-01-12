@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HF0-wL-krD">
+                                <rect key="frame" x="127.5" y="313.5" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.8453458657567916" green="1" blue="0.83730755366052667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Hll-2t-p8U"/>
+                                    <constraint firstAttribute="height" constant="40" id="j7u-ws-tTu"/>
+                                </constraints>
+                                <state key="normal" title="Get Price"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="getPrice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tjN-Oz-rvP"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ticker Symbol" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gKG-dY-eQs">
+                                <rect key="frame" x="111" y="271.5" width="153" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4kT-VO-WbV"/>
+                                    <constraint firstAttribute="width" constant="153" id="87I-wy-v9A"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter A Ticker Symbol" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwY-wa-qHV">
+                                <rect key="frame" x="90" y="219" width="195" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="HVK-Od-IFc"/>
+                                    <constraint firstAttribute="height" constant="44" id="Q5Y-O9-aiG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Price.." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ws4-cs-EKZ">
+                                <rect key="frame" x="136" y="447" width="103" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="hZG-eH-Yaq"/>
+                                    <constraint firstAttribute="height" constant="48" id="n6j-97-qgd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.67905536727846272" green="0.91456619238628267" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gKG-dY-eQs" firstAttribute="top" secondItem="IwY-wa-qHV" secondAttribute="bottom" constant="8.5" id="472-M2-fWM"/>
+                            <constraint firstItem="HF0-wL-krD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KM2-qB-B7l"/>
+                            <constraint firstItem="Ws4-cs-EKZ" firstAttribute="top" secondItem="HF0-wL-krD" secondAttribute="bottom" constant="93.5" id="VJ7-Lz-6U9"/>
+                            <constraint firstItem="HF0-wL-krD" firstAttribute="top" secondItem="gKG-dY-eQs" secondAttribute="bottom" constant="12" id="d1Q-d3-czD"/>
+                            <constraint firstItem="gKG-dY-eQs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dse-s0-1bT"/>
+                            <constraint firstItem="IwY-wa-qHV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kWY-IK-Sad"/>
+                            <constraint firstItem="Ws4-cs-EKZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lvv-8X-eAe"/>
+                            <constraint firstItem="HF0-wL-krD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xSS-Dw-9X1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="priceLabel" destination="Ws4-cs-EKZ" id="xfn-nz-Jrm"/>
+                        <outlet property="tickerTextField" destination="gKG-dY-eQs" id="LoB-NC-Qtm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
